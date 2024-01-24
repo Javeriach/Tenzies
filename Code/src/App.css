@@ -1,0 +1,120 @@
+body {
+  background-color: #da1884;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+  overflow-x: hidden;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.game-box {
+  background-color: rgb(255, 255, 255);
+  width: 450px;
+  height: 600px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.game--details {
+  font-size: 18px;
+}
+.text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.roll-btn {
+  width: 70px;
+  height: 35px;
+  border: none;
+  background-color: rgb(7, 31, 105);
+  font-size: 22px;
+  color: white;
+  border-radius: 5px;
+}
+.dice {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 15px;
+}
+
+.styleDice {
+  background-color: rgb(27, 140, 27);
+}
+
+.dices-div {
+  width: 350px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-template-rows: 40px 40px;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.reset-Btn {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(12, 70, 120);
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  border: none;
+}
+.dot {
+  width: 13px;
+  height: 13px;
+  margin-left: 3px;
+  margin-top: 3px;
+  border-radius: 10px;
+  background-color: rgb(12, 12, 75);
+}
+.display {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.confetti-container {
+  width: 100vw;
+}
+.error {
+  background-color: rgb(217, 84, 84);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .game-box {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .dices-div {
+    margin-left: 20px;
+    width: 350px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 35px 35px 35px 35px 35px;
+    grid-template-rows: 40px 40px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+}
