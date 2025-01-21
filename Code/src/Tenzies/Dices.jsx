@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import SingleDotCreate from './SingleDotCreate';
 
 function Dices(pros) {
+  console.log(pros.element);
   return (
     <div
       className="border-secondary "

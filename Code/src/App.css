@@ -12,6 +12,7 @@ html,
 body {
   overflow-x: hidden;
 }
+
 .game-box {
   background-color: rgb(255, 255, 255);
   width: 450px;
@@ -30,24 +31,35 @@ body {
   align-items: center;
 }
 .roll-btn {
-  width: 70px;
-  height: 35px;
+  width: 80px;
+  height: 45px;
   border: none;
   background-color: rgb(7, 31, 105);
   font-size: 22px;
   color: white;
   border-radius: 5px;
-}
-.dice {
-  width: 60px;
-  height: 60px;
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 15px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
+.dot {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
 .styleDice {
-  background-color: rgb(27, 140, 27);
+  background-color: red !important;
 }
 
 .dices-div {
@@ -57,7 +69,15 @@ body {
   grid-template-columns: 50px 50px 50px 50px 50px;
   grid-template-rows: 40px 40px;
   column-gap: 20px;
-  row-gap: 30px;
+  row-gap: 40px;
+}
+
+.dice {
+  background-color: black;
+  width: 64px;
+  border-radius: 10px;
+  height: 70px;
+  margin: 10px !important;
 }
 
 .reset-Btn {
@@ -69,14 +89,7 @@ body {
   color: white;
   border: none;
 }
-.dot {
-  width: 13px;
-  height: 13px;
-  margin-left: 3px;
-  margin-top: 3px;
-  border-radius: 10px;
-  background-color: rgb(12, 12, 75);
-}
+
 .display {
   display: flex;
   justify-content: center;
@@ -115,6 +128,6 @@ body {
     grid-template-columns: 35px 35px 35px 35px 35px;
     grid-template-rows: 40px 40px;
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 40px;
   }
 }
