@@ -210,7 +210,7 @@ function Tenzies() {
 
               <h5>Total Number of Rolls: {TotalRolls}</h5>
               <h5>
-                Time:{countTime.mints}:{countTime.second} Seconds
+                Time:{countTime?.mints}:{countTime?.second} Seconds
               </h5>
             </div>
           </div>
@@ -224,11 +224,11 @@ function Tenzies() {
             Congratualations <br />
             You have broken the Record🎉🎉
           </h5>
-          LeastTimePeriod:{BestTime.mints}:{BestTime?.second} seconds
+          LeastTimePeriod:{BestTime?.mints}:{BestTime?.second} seconds
         </h5>
       ) : (
         <h5 className="mt-1">
-          LeastTimePeriod:{BestTime.mints}:{BestTime?.second} seconds
+          LeastTimePeriod:{BestTime?.mints}:{BestTime?.second} seconds
         </h5>
       )}
     </div>
