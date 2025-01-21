@@ -216,19 +216,19 @@ function Tenzies() {
           </div>
         )}
       </div>
-      {BestTime.mints === countTime.mints &&
-      BestTime.second === countTime.second &&
+      {BestTime?.mints === countTime?.mints &&
+      BestTime?.second === countTime?.second &&
       allSelected === 10 ? (
         <h5 className="mt-1">
           <h5 className="text-center">
             Congratualations <br />
             You have broken the Record🎉🎉
           </h5>
-          LeastTimePeriod:{BestTime.mints}:{BestTime.second} seconds
+          LeastTimePeriod:{BestTime.mints}:{BestTime?.second} seconds
         </h5>
       ) : (
         <h5 className="mt-1">
-          LeastTimePeriod:{BestTime.mints}:{BestTime.second} seconds
+          LeastTimePeriod:{BestTime.mints}:{BestTime?.second} seconds
         </h5>
       )}
     </div>
